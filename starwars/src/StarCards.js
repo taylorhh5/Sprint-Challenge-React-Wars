@@ -1,6 +1,7 @@
 import React from "react";
 import {Card} from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
+import { Image } from 'semantic-ui-react'
 
 
 const StarCard = props => {
@@ -27,6 +28,7 @@ const StarCard = props => {
   header="This person's gender is:"
   
  description={props.gender} />
+
 
  </div>
   );
