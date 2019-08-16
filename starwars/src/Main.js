@@ -10,22 +10,27 @@ export default function StarW () {
     .get (`https://swapi.co/api/people/`)
     .then (response => {
         console.log (response);
-        console.log ("hello")
-      
+        
         const allData = response.data.results;
-         setInfo (allData);
+        setInfo (allData);
     });
     }, []);
     
 
     return (
 
-        <div className="dataContain">
-      
-    <StarCard  name={info.name} /> 
+    <div className="dataContain">
+      {info.map(person=> (
 
-
-        </div>
+       <StarCard
+       name={person.name}
+       gender={person.gender}
+       birth={person.birth_year}
+       key={person.url}
+       />
+    ))}
+    
+    </div>
     )
     }
     
