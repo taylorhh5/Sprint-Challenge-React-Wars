@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+.Header {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  font-size: 5rem;
+}
+/* write your parent styles in here for your App.js */
+
+
+.star-card{
+  border: 1px solid black;
+  display:flex;
+ justify-content: space-around;
+
+}
+
+
+.ui.card {
+
+  
+  background: rgba(33, 79, 110, 0.685) !important;
+margin-top: 1rem !important;
+margin-bottom: 1rem !important;
+font-size: 1.4rem;
+font-weight: 600;
+
+}
